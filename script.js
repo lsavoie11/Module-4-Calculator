@@ -43,6 +43,10 @@ function calculate() {
       return;
   }
 
+  if (typeof result === "number") {
+    result = parseFloat(result.toFixed(10));
+  }
+
   currentValue = result.toString();
   operator = "";
   previousValue = "";
